@@ -15,22 +15,22 @@ MAIN_WEBSITE = "https://nextbomb.in"
 # Logging configuration
 LOG_LEVEL = os.getenv('LOG_LEVEL', 'INFO')
 
-# Bot token (should be set as environment variable)
-BOT_TOKEN = os.getenv('TELEGRAM_BOT_TOKEN', '8372107408:AAEdnBUYJLmDhOKycjQHsvN30bmKjfCejcY')
+# Bot token (MUST be set as environment variable)
+BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
 
 # Admin/Owner configuration
-ADMIN_ID = int(os.getenv('ADMIN_ID', '7052170756'))
+ADMIN_ID = int(os.getenv('ADMIN_ID'))
 OWNER_ID = ADMIN_ID  # Alias for admin ID
 
 # Log channel configuration
-LOG_CHANNEL_ID = int(os.getenv('LOG_CHANNEL_ID', '-1002319385484'))
+LOG_CHANNEL_ID = int(os.getenv('LOG_CHANNEL_ID'))
 
 # Telegram API configuration (for advanced features)
-API_ID = int(os.getenv('API_ID', '29756601'))
-API_HASH = os.getenv('API_HASH', '967c4656b8dd6a475b7786e3287ba2d3')
+API_ID = int(os.getenv('API_ID'))
+API_HASH = os.getenv('API_HASH')
 
 # Database configuration
-MONGODB_URL = os.getenv('MONGODB_URL', 'mongodb+srv://whatsapp110x:whatsapp110x@cluster0.dh2ygtt.mongodb.net/sample_mflix?retryWrites=true&w=majority&appName=Cluster0')
+MONGODB_URL = os.getenv('MONGODB_URL')
 
 # Render deployment configuration
 PORT = int(os.getenv('PORT', 8000))

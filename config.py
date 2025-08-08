@@ -17,20 +17,36 @@ LOG_LEVEL = os.getenv('LOG_LEVEL', 'INFO')
 
 # Bot token (MUST be set as environment variable)
 BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
+if not BOT_TOKEN:
+    raise ValueError("Bot token not provided. Please set TELEGRAM_BOT_TOKEN environment variable.")
 
 # Admin/Owner configuration
-ADMIN_ID = int(os.getenv('ADMIN_ID'))
+try:
+    ADMIN_ID = int(os.getenv('ADMIN_ID'))
+except (TypeError, ValueError):
+    raise ValueError("ADMIN_ID environment variable is missing or invalid.")
 OWNER_ID = ADMIN_ID  # Alias for admin ID
 
 # Log channel configuration
-LOG_CHANNEL_ID = int(os.getenv('LOG_CHANNEL_ID'))
+try:
+    LOG_CHANNEL_ID = int(os.getenv('LOG_CHANNEL_ID'))
+except (TypeError, ValueError):
+    raise ValueError("LOG_CHANNEL_ID environment variable is missing or invalid.")
 
 # Telegram API configuration (for advanced features)
-API_ID = int(os.getenv('API_ID'))
+API_ID = os.getenv('API_ID')
 API_HASH = os.getenv('API_HASH')
+if not API_ID or not API_HASH:
+    raise ValueError("API_ID or API_HASH environment variables are missing.")
+try:
+    API_ID = int(API_ID)
+except ValueError:
+    raise ValueError("API_ID must be an integer.")
 
 # Database configuration
 MONGODB_URL = os.getenv('MONGODB_URL')
+if not MONGODB_URL:
+    raise ValueError("MONGODB_URL environment variable is missing.")
 
 # Render deployment configuration
 PORT = int(os.getenv('PORT', 8000))

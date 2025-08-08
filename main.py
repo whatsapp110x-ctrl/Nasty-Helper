@@ -1,53 +1,102 @@
-#!/usr/bin/env python3
-"""
-Main entry point for the Telegram bot.
-This file starts the bot and handles the main execution loop.
-Optimized for 24/7 hosting on Render.
-"""
-
 import logging
-import os
-import sys
-from bot import TelegramBot
-from config import BOT_TOKEN
+import asyncio
+from datetime import datetime
+from telegram import Update, BotCommand
+from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
+from pymongo import MongoClient
 
-# Configure logging for production
+# Import config values
+from config import (
+    BOT_TOKEN, ADMIN_ID, MAIN_WEBSITE, COMMAND_DESCRIPTIONS,
+    SUCCESS_MESSAGES, ERROR_MESSAGES, POLL_INTERVAL, TIMEOUT,
+    MONGODB_URL
+)
+from keep_alive import keep_alive  # For Render/Repl.it uptime
+
+# Setup logging
 logging.basicConfig(
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
-    level=logging.INFO,
-    handlers=[
-        logging.StreamHandler(sys.stdout),
-        logging.FileHandler('bot.log')
-    ]
+    level=logging.INFO
 )
 
-logger = logging.getLogger(__name__)
+# Connect to MongoDB
+mongo_client = MongoClient(MONGODB_URL)
+db = mongo_client["telegram_bot"]
+users_col = db["users"]
 
-def main():
-    """Main function to start the bot for 24/7 operation."""
-    try:
-        # Get bot token from configuration (which checks environment variables with fallback)
-        bot_token = BOT_TOKEN
-        
-        if not bot_token:
-            logger.error("Bot token not available!")
-            logger.error("Please set TELEGRAM_BOT_TOKEN environment variable or update config.py")
-            sys.exit(1)
-        
-        # Create and start the bot
-        bot = TelegramBot(bot_token)
-        logger.info("Starting Telegram bot for 24/7 operation...")
-        logger.info("Bot is now running on Render!")
-        
-        # Run the bot (this will loop forever)
-        bot.run()
-        
-    except KeyboardInterrupt:
-        logger.info("Bot stopped by user")
-    except Exception as e:
-        logger.error(f"Error starting bot: {e}")
-        logger.error("Bot will restart automatically on Render")
-        sys.exit(1)
+# Store user in DB if new
+def save_user(user):
+    if not users_col.find_one({"user_id": user.id}):
+        users_col.insert_one({
+            "user_id": user.id,
+            "username": user.username,
+            "first_name": user.first_name,
+            "date_added": datetime.utcnow()
+        })
 
-if __name__ == '__main__':
-    main()
+# /start command
+async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    user = update.effective_user
+    save_user(user)
+    await update.message.reply_text("👋 Welcome! Use /help to see my commands.")
+
+# /help command
+async def help_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    help_text = "\n".join([f"/{cmd} - {desc}" for cmd, desc in COMMAND_DESCRIPTIONS.items()])
+    await update.message.reply_text(f"📖 Available Commands:\n\n{help_text}")
+
+# /website command
+async def website(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    await update.message.reply_text(f"🌐 Visit: {MAIN_WEBSITE}")
+
+# /info command
+async def info(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    user = update.effective_user
+    await update.message.reply_text(
+        f"🆔 User ID: {user.id}\n"
+        f"👤 Username: @{user.username if user.username else 'N/A'}\n"
+        f"📅 First Name: {user.first_name}"
+    )
+
+# Admin-only /broadcast
+async def broadcast(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    if update.effective_user.id != ADMIN_ID:
+        return await update.message.reply_text("🚫 Not authorized.")
+
+    if not context.args:
+        return await update.message.reply_text("Usage: /broadcast <message>")
+
+    message = " ".join(context.args)
+    sent_count = 0
+
+    for user in users_col.find():
+        try:
+            await context.bot.send_message(chat_id=user["user_id"], text=message)
+            sent_count += 1
+        except Exception as e:
+            logging.warning(f"Failed to send to {user['user_id']}: {e}")
+
+    await update.message.reply_text(f"✅ Broadcast sent to {sent_count} users.")
+
+# Main bot function
+async def main():
+    app = ApplicationBuilder().token(BOT_TOKEN).read_timeout(TIMEOUT).write_timeout(TIMEOUT).build()
+
+    # Handlers
+    app.add_handler(CommandHandler("start", start))
+    app.add_handler(CommandHandler("help", help_command))
+    app.add_handler(CommandHandler("website", website))
+    app.add_handler(CommandHandler("info", info))
+    app.add_handler(CommandHandler("broadcast", broadcast))
+
+    # Update BotFather menu
+    await app.bot.set_my_commands([
+        BotCommand(cmd, desc) for cmd, desc in COMMAND_DESCRIPTIONS.items()
+    ])
+
+    logging.info(SUCCESS_MESSAGES["bot_started"])
+    await app.run_polling(poll_interval=POLL_INTERVAL)
+
+if __name__ == "__main__":
+    keep_alive()  # Start web server for uptime pings
+    asyncio.run(main())

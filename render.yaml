@@ -1,5 +1,5 @@
 services:
-  - type: web
+  - type: worker   # <-- was "web"
     name: telegram-bot
     env: python
     plan: free
@@ -8,3 +8,4 @@ services:
     envVars:
       - key: TELEGRAM_BOT_TOKEN
         sync: false
+      # add other envs you actually use (ADMIN_ID, LOG_CHANNEL_ID, etc.)

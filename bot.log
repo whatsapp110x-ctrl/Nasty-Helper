@@ -1,0 +1,143 @@
+2025-08-08 08:56:29,358 - __main__ - INFO - Starting Telegram bot for 24/7 operation...
+2025-08-08 08:56:29,358 - __main__ - INFO - Bot is now running on Render!
+2025-08-08 08:56:29,358 - bot - INFO - Starting Telegram bot for 24/7 operation...
+2025-08-08 08:56:29,358 - bot - INFO - Bot is ready to receive messages!
+2025-08-08 08:57:16,898 - bot - INFO - Processed message from chat 7052170756: /start
+2025-08-08 08:57:19,317 - bot - INFO - Processed callback query: attack1
+2025-08-08 08:57:28,933 - bot - INFO - Processed callback query: attack2
+2025-08-08 08:58:09,308 - __main__ - INFO - Starting Telegram bot for 24/7 operation...
+2025-08-08 08:58:09,308 - __main__ - INFO - Bot is now running on Render!
+2025-08-08 08:58:09,309 - bot - INFO - Starting Telegram bot for 24/7 operation...
+2025-08-08 08:58:09,309 - bot - INFO - Bot is ready to receive messages!
+2025-08-08 09:00:03,272 - bot - INFO - Processed message from chat 7052170756: /start
+2025-08-08 10:14:24,241 - __main__ - INFO - Starting Telegram bot for 24/7 operation...
+2025-08-08 10:14:24,243 - __main__ - INFO - Bot is now running on Render!
+2025-08-08 10:14:24,243 - bot - INFO - Starting Telegram bot for 24/7 operation...
+2025-08-08 10:14:24,243 - bot - INFO - Bot is ready to receive messages!
+2025-08-08 10:14:25,304 - bot - INFO - Processed message from chat 7052170756: /start
+2025-08-08 10:14:55,177 - __main__ - INFO - Starting Telegram bot for 24/7 operation...
+2025-08-08 10:14:55,177 - __main__ - INFO - Bot is now running on Render!
+2025-08-08 10:14:55,177 - bot - INFO - Starting Telegram bot for 24/7 operation...
+2025-08-08 10:14:55,177 - bot - INFO - Bot is ready to receive messages!
+2025-08-08 10:15:18,285 - bot - INFO - Processed message from chat 7052170756: /start
+2025-08-08 10:15:25,956 - bot - INFO - Processed message from chat 7052170756: /attack
+2025-08-08 10:17:40,370 - __main__ - INFO - Starting Telegram bot for 24/7 operation...
+2025-08-08 10:17:40,370 - __main__ - INFO - Bot is now running on Render!
+2025-08-08 10:17:40,370 - bot - INFO - Starting Telegram bot for 24/7 operation...
+2025-08-08 10:17:40,370 - bot - INFO - Bot is ready to receive messages!
+2025-08-08 10:18:11,241 - bot - INFO - Processed message from chat 7052170756: /ask hii
+2025-08-08 10:20:13,278 - __main__ - INFO - Starting Telegram bot for 24/7 operation...
+2025-08-08 10:20:13,278 - __main__ - INFO - Bot is now running on Render!
+2025-08-08 10:20:13,278 - bot - INFO - Starting Telegram bot for 24/7 operation...
+2025-08-08 10:20:13,278 - bot - INFO - Bot is ready to receive messages!
+2025-08-08 10:20:22,785 - bot - INFO - Processed message from chat 7052170756: /ask hi
+2025-08-08 10:21:30,990 - bot - INFO - Processed message from chat 7052170756: /user
+2025-08-08 10:23:14,634 - __main__ - INFO - Starting Telegram bot for 24/7 operation...
+2025-08-08 10:23:14,635 - __main__ - INFO - Bot is now running on Render!
+2025-08-08 10:23:14,635 - bot - INFO - Starting Telegram bot for 24/7 operation...
+2025-08-08 10:23:14,635 - bot - INFO - Bot is ready to receive messages!
+2025-08-08 10:23:31,322 - bot - INFO - Processed message from chat 7052170756: /user
+2025-08-08 10:23:53,547 - bot - INFO - Processed message from chat 7052170756: /reply @fightermonk110 hi
+2025-08-08 10:24:03,956 - bot - INFO - Processed message from chat 7052170756: /reply fightermonk110 hi
+2025-08-08 10:26:29,675 - __main__ - INFO - Starting Telegram bot for 24/7 operation...
+2025-08-08 10:26:29,675 - __main__ - INFO - Bot is now running on Render!
+2025-08-08 10:26:29,675 - bot - INFO - Starting Telegram bot for 24/7 operation...
+2025-08-08 10:26:29,675 - bot - INFO - Bot is ready to receive messages!
+2025-08-08 10:26:45,886 - bot - INFO - Processed message from chat 7052170756: /reply hi
+2025-08-08 10:26:56,485 - bot - INFO - Processed message from chat 7052170756: /reply hi
+2025-08-08 10:27:08,711 - bot - INFO - Processed message from chat 7052170756: /start
+2025-08-08 10:27:13,419 - bot - INFO - Processed message from chat 7052170756: hhi
+2025-08-08 10:27:20,001 - bot - INFO - Processed message from chat 7052170756: /ask hii
+2025-08-08 10:27:45,859 - bot - INFO - Processed message from chat 7052170756: /reply @fightermonk110 hi
+2025-08-08 10:27:57,910 - bot - INFO - Processed message from chat 7052170756: /reply hi
+2025-08-08 10:28:21,684 - bot - INFO - Processed message from chat 7052170756: /reply 7052170756 hii
+2025-08-08 10:29:32,132 - __main__ - INFO - Starting Telegram bot for 24/7 operation...
+2025-08-08 10:29:32,132 - __main__ - INFO - Bot is now running on Render!
+2025-08-08 10:29:32,132 - bot - INFO - Starting Telegram bot for 24/7 operation...
+2025-08-08 10:29:32,132 - bot - INFO - Bot is ready to receive messages!
+2025-08-08 10:29:54,683 - bot - INFO - Processed message from chat 7052170756: fastboot erase frp
+2025-08-08 10:30:09,207 - bot - INFO - Processed message from chat 7052170756: /reply hi
+2025-08-08 10:30:48,696 - __main__ - INFO - Starting Telegram bot for 24/7 operation...
+2025-08-08 10:30:48,697 - __main__ - INFO - Bot is now running on Render!
+2025-08-08 10:30:48,697 - bot - INFO - Starting Telegram bot for 24/7 operation...
+2025-08-08 10:30:48,697 - bot - INFO - Bot is ready to receive messages!
+2025-08-08 10:33:31,781 - __main__ - INFO - Starting Telegram bot for 24/7 operation...
+2025-08-08 10:33:31,784 - __main__ - INFO - Bot is now running on Render!
+2025-08-08 10:33:31,784 - bot - INFO - Starting Telegram bot for 24/7 operation...
+2025-08-08 10:33:31,784 - bot - INFO - Bot is ready to receive messages!
+2025-08-08 10:33:35,302 - bot - INFO - Processed message from chat 7052170756: /start
+2025-08-08 10:33:47,925 - bot - INFO - Processed message from chat 7052170756: /broadcast hii
+2025-08-08 10:34:56,278 - __main__ - INFO - Starting Telegram bot for 24/7 operation...
+2025-08-08 10:34:56,278 - __main__ - INFO - Bot is now running on Render!
+2025-08-08 10:34:56,278 - bot - INFO - Starting Telegram bot for 24/7 operation...
+2025-08-08 10:34:56,278 - bot - INFO - Bot is ready to receive messages!
+2025-08-08 10:34:57,342 - bot - INFO - Processed message from chat 7052170756: /broadcast hi
+2025-08-08 10:38:01,263 - __main__ - INFO - Starting Telegram bot for 24/7 operation...
+2025-08-08 10:38:01,264 - __main__ - INFO - Bot is now running on Render!
+2025-08-08 10:38:01,264 - bot - INFO - Starting Telegram bot for 24/7 operation...
+2025-08-08 10:38:01,264 - bot - INFO - Bot is ready to receive messages!
+2025-08-08 10:39:20,401 - bot - INFO - Processed message from chat 7052170756: /setforward
+2025-08-08 10:39:49,099 - bot - INFO - Processed message from chat 7052170756: /setforward
+2025-08-08 10:39:52,686 - bot - INFO - Processed message from chat 7052170756: /setforward hi
+2025-08-08 10:39:55,069 - bot - INFO - Processed message from chat 7052170756: /broadcast
+2025-08-08 10:39:56,998 - bot - INFO - Processed message from chat 7052170756: /setforward
+2025-08-08 10:40:10,564 - bot - INFO - Processed message from chat 7052170756: /listforward
+2025-08-08 10:40:13,064 - bot - INFO - Processed message from chat 7052170756: /setforward
+2025-08-08 10:40:25,478 - bot - INFO - Processed message from chat 7052170756: /stopforward
+2025-08-08 10:41:36,261 - bot - INFO - Processed message from chat 7052170756: Anyone dump cc here
+2025-08-08 10:41:41,182 - bot - INFO - Processed message from chat 7052170756: /user
+2025-08-08 10:42:01,464 - __main__ - INFO - Starting Telegram bot for 24/7 operation...
+2025-08-08 10:42:01,465 - __main__ - INFO - Bot is now running on Render!
+2025-08-08 10:42:01,465 - bot - INFO - Starting Telegram bot for 24/7 operation...
+2025-08-08 10:42:01,465 - bot - INFO - Bot is ready to receive messages!
+2025-08-08 10:44:54,640 - __main__ - INFO - Starting Telegram bot for 24/7 operation...
+2025-08-08 10:44:54,640 - __main__ - INFO - Bot is now running on Render!
+2025-08-08 10:44:54,640 - bot - INFO - Starting Telegram bot for 24/7 operation...
+2025-08-08 10:44:54,640 - bot - INFO - Bot is ready to receive messages!
+2025-08-08 10:45:13,700 - bot - INFO - Processed message from chat 7052170756: /user
+2025-08-08 10:47:03,746 - __main__ - INFO - Starting Telegram bot for 24/7 operation...
+2025-08-08 10:47:03,747 - __main__ - INFO - Bot is now running on Render!
+2025-08-08 10:47:03,747 - bot - INFO - Starting Telegram bot for 24/7 operation...
+2025-08-08 10:47:03,747 - bot - INFO - Bot is ready to receive messages!
+2025-08-08 10:47:29,983 - bot - INFO - Processed message from chat 7052170756: /user
+2025-08-08 10:48:56,426 - bot - INFO - Processed message from chat 7052170756: /user
+2025-08-08 10:50:09,394 - __main__ - INFO - Starting Telegram bot for 24/7 operation...
+2025-08-08 10:50:09,394 - __main__ - INFO - Bot is now running on Render!
+2025-08-08 10:50:09,394 - bot - INFO - Starting Telegram bot for 24/7 operation...
+2025-08-08 10:50:09,394 - bot - INFO - Bot is ready to receive messages!
+2025-08-08 10:50:32,593 - bot - INFO - Processed message from chat 7052170756: /user
+2025-08-08 10:52:11,915 - __main__ - INFO - Starting Telegram bot for 24/7 operation...
+2025-08-08 10:52:11,916 - __main__ - INFO - Bot is now running on Render!
+2025-08-08 10:52:11,916 - bot - INFO - Starting Telegram bot for 24/7 operation...
+2025-08-08 10:52:11,916 - bot - INFO - Bot is ready to receive messages!
+2025-08-08 10:52:27,921 - bot - INFO - Processed message from chat 7052170756: /user
+2025-08-08 10:52:47,344 - bot - INFO - Processed message from chat 7052170756: /attack
+2025-08-08 10:52:54,006 - bot - INFO - Processed message from chat 7052170756: /ask hii
+2025-08-08 10:53:03,547 - bot - INFO - Processed message from chat 7052170756: /ask hi guru
+2025-08-08 11:01:13,785 - __main__ - INFO - Starting Telegram bot for 24/7 operation...
+2025-08-08 11:01:13,785 - __main__ - INFO - Bot is now running on Render!
+2025-08-08 11:01:13,785 - bot - INFO - Starting Telegram bot for 24/7 operation...
+2025-08-08 11:01:13,785 - bot - INFO - Bot is ready to receive messages!
+2025-08-08 11:06:08,983 - __main__ - INFO - Starting Telegram bot for 24/7 operation...
+2025-08-08 11:06:08,985 - __main__ - INFO - Bot is now running on Render!
+2025-08-08 11:06:08,985 - bot - INFO - Starting Telegram bot for 24/7 operation...
+2025-08-08 11:06:08,987 - bot - INFO - Bot is ready to receive messages!
+2025-08-08 11:08:18,798 - __main__ - INFO - Starting Telegram bot for 24/7 operation...
+2025-08-08 11:08:18,798 - __main__ - INFO - Bot is now running on Render!
+2025-08-08 11:08:18,798 - bot - INFO - Starting Telegram bot for 24/7 operation...
+2025-08-08 11:08:18,798 - bot - INFO - Bot is ready to receive messages!
+2025-08-08 11:09:25,089 - bot - INFO - Processed message from chat 7052170756: /ask
+2025-08-08 11:09:30,397 - bot - INFO - Processed message from chat 7052170756: /urls
+2025-08-08 11:09:36,729 - bot - INFO - Processed message from chat 7052170756: /change
+2025-08-08 11:09:55,755 - bot - INFO - Processed message from chat 7052170756: /change URL 1
+2025-08-08 11:10:01,688 - bot - INFO - Processed message from chat 7052170756: /urls
+2025-08-08 11:10:06,610 - bot - INFO - Processed message from chat 7052170756: /urls
+2025-08-08 11:10:08,707 - bot - INFO - Processed message from chat 7052170756: /change
+2025-08-08 11:10:26,376 - bot - INFO - Processed message from chat 7052170756: /remove URL
+2025-08-08 11:10:29,801 - bot - INFO - Processed message from chat 7052170756: /urls
+2025-08-08 11:10:34,821 - bot - INFO - Processed message from chat 7052170756: /change
+2025-08-08 11:13:19,040 - bot - INFO - Processed message from chat 7052170756: /change Ashish www.pornhub.con
+2025-08-08 11:13:23,842 - bot - INFO - Processed message from chat 7052170756: /change
+2025-08-08 11:13:40,059 - bot - INFO - Processed message from chat 7052170756: /remove Ashish
+2025-08-08 11:13:47,664 - bot - INFO - Processed message from chat 7052170756: /change
+2025-08-08 11:17:02,558 - bot - INFO - Processed message from chat 7052170756: /start

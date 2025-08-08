@@ -1,0 +1,28 @@
+RENDER DEPLOYMENT INSTRUCTIONS
+==============================
+
+Your Telegram bot is now ready for 24/7 hosting on Render!
+
+FILES CREATED:
+- Procfile: Tells Render how to start the bot
+- render.yaml: Render service configuration
+- start.sh: Startup script
+- requirements-render.txt: Python dependencies for Render
+- Updated main.py and bot.py for 24/7 operation
+
+DEPLOYMENT STEPS:
+1. Create a Render account at render.com
+2. Connect your GitHub repository (push this code to GitHub first)
+3. Create a new "Web Service" on Render
+4. Choose your repository
+5. Set Environment Variables:
+   - Add TELEGRAM_BOT_TOKEN with your bot token
+6. Render will automatically detect the Python app and deploy it
+
+BUILD SETTINGS (if needed):
+- Build Command: pip install -r requirements-render.txt
+- Start Command: python main.py
+
+Your bot will run 24/7 on Render's free tier!
+
+IMPORTANT: Make sure to set the TELEGRAM_BOT_TOKEN environment variable in Render's dashboard.
